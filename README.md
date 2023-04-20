@@ -27,6 +27,12 @@ To launch this controller, modify the config file `allegro_hand_control.yaml` in
 roslaunch allegro_hand_ros_control allegro_hand.launch
 ```
 
+you might want to use this with another robot. When doing that, it is better to enclose the `launch` under a namespace:
+
+```
+roslaunch allegro_hand_ros_control allegro_hand.launch __ns:=allegro
+```
+
 ## Installing Drivers [[1]](#1) <a name="drivers"></a>
 Before setting up the controller, we need to ensure that we have all the drivers necessary for establishing communication over the PCAN channel. Make sure to install the following dependencies first before setting up the allegro controller package.
 
