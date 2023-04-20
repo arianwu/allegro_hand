@@ -14,6 +14,7 @@ Using only [Allegro-Hand-Controller-DIME](https://github.com/NYU-robot-learning/
   <img src="docs/images/rosgraph_nyu_controller.png" />
 </p>
 To launch this controller, you need to execute:
+
 ```
 roslaunch allegro_hand allegro_hand.launch
 ```
