@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: allegro_hand_description
+    relative_path: urdf/allegro_hand_r.urdf.xacro
+    xacro_args: --inorder
+  SRDF:
+    relative_path: config/allegro_hand.srdf
+  CONFIG:
+    author_name: Arian Wu
+    author_email: arianwu@gmail.com
+    generated_timestamp: 1672201894

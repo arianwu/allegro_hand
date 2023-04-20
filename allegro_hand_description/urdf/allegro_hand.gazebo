@@ -1,0 +1,195 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <gazebo reference="base_link">
+    <visual name='visual'>
+     <material>
+       <script>
+         <uri>file://media/materials/scripts/gazebo.material</uri>
+         <name>Gazebo/White</name>
+       </script>
+     </material>
+    </visual>
+  </gazebo>
+
+  <!--Middle Finger-->
+  <gazebo reference="mf1">
+    <visual name='visual'>
+     <material>
+       <script>
+         <uri>file://media/materials/scripts/gazebo.material</uri>
+         <name>Gazebo/FlatBlack</name>
+       </script>
+     </material>
+    </visual>
+  </gazebo>
+
+  <gazebo reference="mf2">
+    <visual name='visual'>
+     <material>
+       <script>
+         <uri>file://media/materials/scripts/gazebo.material</uri>
+         <name>Gazebo/Grey</name>
+       </script>
+     </material>
+    </visual>
+  </gazebo>
+
+  <gazebo reference="mf3">
+    <visual name='visual'>
+     <material>
+       <script>
+         <uri>file://media/materials/scripts/gazebo.material</uri>
+         <name>Gazebo/FlatBlack</name>
+       </script>
+     </material>
+    </visual>
+  </gazebo>
+
+  <gazebo reference="mf4">
+    <visual name='visual'>
+     <material>
+       <script>
+         <uri>file://media/materials/scripts/gazebo.material</uri>
+         <name>Gazebo/Grey</name>
+       </script>
+     </material>
+    </visual>
+  </gazebo>
+
+  <!--Pinky Finger-->
+  <gazebo reference="pf1">
+    <visual name='visual'>
+     <material>
+       <script>
+         <uri>file://media/materials/scripts/gazebo.material</uri>
+         <name>Gazebo/FlatBlack</name>
+       </script>
+     </material>
+    </visual>
+  </gazebo>
+
+  <gazebo reference="pf2">
+    <visual name='visual'>
+     <material>
+       <script>
+         <uri>file://media/materials/scripts/gazebo.material</uri>
+         <name>Gazebo/Grey</name>
+       </script>
+     </material>
+    </visual>
+  </gazebo>
+
+  <gazebo reference="pf3">
+    <visual name='visual'>
+     <material>
+       <script>
+         <uri>file://media/materials/scripts/gazebo.material</uri>
+         <name>Gazebo/FlatBlack</name>
+       </script>
+     </material>
+    </visual>
+  </gazebo>
+
+  <gazebo reference="pf4">
+    <visual name='visual'>
+     <material>
+       <script>
+         <uri>file://media/materials/scripts/gazebo.material</uri>
+         <name>Gazebo/Grey</name>
+       </script>
+     </material>
+    </visual>
+  </gazebo>
+
+  <!--Index Finger-->
+  <gazebo reference="if1">
+    <visual name='visual'>
+     <material>
+       <script>
+         <uri>file://media/materials/scripts/gazebo.material</uri>
+         <name>Gazebo/FlatBlack</name>
+       </script>
+     </material>
+    </visual>
+  </gazebo>
+
+  <gazebo reference="if2">
+    <visual name='visual'>
+     <material>
+       <script>
+         <uri>file://media/materials/scripts/gazebo.material</uri>
+         <name>Gazebo/Grey</name>
+       </script>
+     </material>
+    </visual>
+  </gazebo>
+
+  <gazebo reference="if3">
+    <visual name='visual'>
+     <material>
+       <script>
+         <uri>file://media/materials/scripts/gazebo.material</uri>
+         <name>Gazebo/FlatBlack</name>
+       </script>
+     </material>
+    </visual>
+  </gazebo>
+
+  <gazebo reference="if4">
+    <visual name='visual'>
+     <material>
+       <script>
+         <uri>file://media/materials/scripts/gazebo.material</uri>
+         <name>Gazebo/Grey</name>
+       </script>
+     </material>
+    </visual>
+  </gazebo>
+
+  <!--Thumb Finger-->
+  <gazebo reference="th1">
+    <visual name='visual'>
+     <material>
+       <script>
+         <uri>file://media/materials/scripts/gazebo.material</uri>
+         <name>Gazebo/FlatBlack</name>
+       </script>
+     </material>
+    </visual>
+  </gazebo>
+
+  <gazebo reference="th2">
+    <visual name='visual'>
+     <material>
+       <script>
+         <uri>file://media/materials/scripts/gazebo.material</uri>
+         <name>Gazebo/Grey</name>
+       </script>
+     </material>
+    </visual>
+  </gazebo>
+
+  <gazebo reference="th3">
+    <visual name='visual'>
+     <material>
+       <script>
+         <uri>file://media/materials/scripts/gazebo.material</uri>
+         <name>Gazebo/FlatBlack</name>
+       </script>
+     </material>
+    </visual>
+  </gazebo>
+
+  <gazebo reference="th4">
+    <visual name='visual'>
+     <material>
+       <script>
+         <uri>file://media/materials/scripts/gazebo.material</uri>
+         <name>Gazebo/Grey</name>
+       </script>
+     </material>
+    </visual>
+  </gazebo>
+
+</robot>

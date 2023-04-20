@@ -1,0 +1,65 @@
+digraph G {
+node [shape=box];
+"base_link" [label="base_link"];
+"if1" [label="if1"];
+"if2" [label="if2"];
+"if3" [label="if3"];
+"if4" [label="if4"];
+"if5" [label="if5"];
+"mf1" [label="mf1"];
+"mf2" [label="mf2"];
+"mf3" [label="mf3"];
+"mf4" [label="mf4"];
+"mf5" [label="mf5"];
+"pf1" [label="pf1"];
+"pf2" [label="pf2"];
+"pf3" [label="pf3"];
+"pf4" [label="pf4"];
+"pf5" [label="pf5"];
+"th1" [label="th1"];
+"th2" [label="th2"];
+"th3" [label="th3"];
+"th4" [label="th4"];
+"th5" [label="th5"];
+node [shape=ellipse, color=blue, fontcolor=blue];
+"base_link" -> "jif1" [label="xyz: 0 0.045098 0.014293 \nrpy: -0.0872665 0 0"]
+"jif1" -> "if1"
+"if1" -> "jif2" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
+"jif2" -> "if2"
+"if2" -> "jif3" [label="xyz: 0 0 0.054 \nrpy: 0 -1.5708 0"]
+"jif3" -> "if3"
+"if3" -> "jif4" [label="xyz: 0.0384 0 0 \nrpy: 0 -0 0"]
+"jif4" -> "if4"
+"if4" -> "jif5" [label="xyz: 0.0157 0 0 \nrpy: 0 -0 0"]
+"jif5" -> "if5"
+"base_link" -> "jmf1" [label="xyz: 0 0 0.0166 \nrpy: 0 -0 0"]
+"jmf1" -> "mf1"
+"mf1" -> "jmf2" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
+"jmf2" -> "mf2"
+"mf2" -> "jmf3" [label="xyz: 0 0 0.054 \nrpy: 0 -1.5708 0"]
+"jmf3" -> "mf3"
+"mf3" -> "jmf4" [label="xyz: 0.0384 0 0 \nrpy: 0 -0 0"]
+"jmf4" -> "mf4"
+"mf4" -> "jmf5" [label="xyz: 0.0157 0 0 \nrpy: 0 -0 0"]
+"jmf5" -> "mf5"
+"base_link" -> "jpf1" [label="xyz: 0 -0.045098 0.014293 \nrpy: 0.0872665 -0 0"]
+"jpf1" -> "pf1"
+"pf1" -> "jpf2" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
+"jpf2" -> "pf2"
+"pf2" -> "jpf3" [label="xyz: 0 0 0.054 \nrpy: 0 -1.5708 0"]
+"jpf3" -> "pf3"
+"pf3" -> "jpf4" [label="xyz: 0.0384 0 0 \nrpy: 0 -0 0"]
+"jpf4" -> "pf4"
+"pf4" -> "jpf5" [label="xyz: 0.0157 0 0 \nrpy: 0 -0 0"]
+"jpf5" -> "pf5"
+"base_link" -> "jth1" [label="xyz: -0.0182 0.016958 -0.0723 \nrpy: -0.0872665 0 0"]
+"jth1" -> "th1"
+"th1" -> "jth2" [label="xyz: 0.005 0.055189 0 \nrpy: 0 -0 0"]
+"jth2" -> "th2"
+"th2" -> "jth3" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
+"jth3" -> "th3"
+"th3" -> "jth4" [label="xyz: 0 0.051204 0 \nrpy: 0 -0 0"]
+"jth4" -> "th4"
+"th4" -> "jth5" [label="xyz: 0 0.0313 0 \nrpy: 0 -1.48353 0"]
+"jth5" -> "th5"
+}

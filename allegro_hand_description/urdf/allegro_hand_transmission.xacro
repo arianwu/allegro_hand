@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!--Middle Finger-->
+  <transmission name="jmf1_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="jmf1">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="jmf1_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="jmf2_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="jmf2">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="jmf2_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="jmf3_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="jmf3">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="jmf3_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="jmf4_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="jmf4">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="jmf4_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <!--Pinky Finger-->
+  <transmission name="jpf1_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="jpf1">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="jpf1_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="jpf2_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="jpf2">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="jpf2_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="jpf3_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="jpf3">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="jpf3_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="jpf4_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="jpf4">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="jpf4_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  
+  <!--Index Finger-->
+  <transmission name="jif1_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="jif1">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="jif1_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="jif2_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="jif2">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="jif2_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="jif3_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="jif3">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="jif3_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="jif4_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="jif4">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="jif4_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  
+  <!--Thumb-->
+  <transmission name="jth1_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="jth1">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="jth1_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="jth2_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="jth2">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="jth2_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="jth3_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="jth3">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="jth3_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="jth4_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="jth4">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="jth4_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+    
+</robot>

@@ -1,0 +1,25 @@
+controller_list:
+  - name: fake_allegro_hand_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - jif1
+      - jif2
+      - jif3
+      - jif4
+      - jmf1
+      - jmf2
+      - jmf3
+      - jmf4
+      - jpf1
+      - jpf2
+      - jpf3
+      - jpf4
+      - jth1
+      - jth2
+      - jth3
+      - jth4
+initial:  # Define initial robot poses.
+#  - group: allegro_hand
+#    pose: home
+
+  []

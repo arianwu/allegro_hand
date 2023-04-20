@@ -1,0 +1,56 @@
+allegro_hand_controller:
+  type: effort_controllers/JointGroupPositionController
+  joints: [jif1, jif2, jif3, jif4, jmf1, jmf2, jmf3, jmf4, jpf1, jpf2, jpf3, jpf4, jth1, jth2, jth3, jth4]
+
+  jif1: {pid: {p:  1.5,  d: 0.10, i: 0, i_clamp: 1}}
+  jif2: {pid: {p:  2.0,  d: 0.11, i: 0, i_clamp: 1}} # old as is
+  jif3: {pid: {p:  3.5,  d: 0.12, i: 0, i_clamp: 1}} # old {p: 1.8,  d: 0.12, i: 0, i_clamp: 1}
+  jif4: {pid: {p:  3.5,  d: 0.13, i: 0, i_clamp: 1}} # old {p: 3.5,  d: 0.13, i: 0, i_clamp: 1}
+  jmf1: {pid: {p:  1.5,  d: 0.10, i: 0, i_clamp: 1}}
+  jmf2: {pid: {p:  2.0,  d: 0.11, i: 0, i_clamp: 1}}
+  jmf3: {pid: {p:  3.5,  d: 0.12, i: 0, i_clamp: 1}}
+  jmf4: {pid: {p:  3.5,  d: 0.13, i: 0, i_clamp: 1}}
+  jpf1: {pid: {p:  1.5,  d: 0.10, i: 0, i_clamp: 1}}
+  jpf2: {pid: {p:  2.0,  d: 0.11, i: 0, i_clamp: 1}}
+  jpf3: {pid: {p:  3.5,  d: 0.12, i: 0, i_clamp: 1}}
+  jpf4: {pid: {p:  3.5,  d: 0.13, i: 0, i_clamp: 1}}
+  jth1: {pid: {p: 10.0,  d: 0.35, i: 0, i_clamp: 1}} # old {p: 2.2,  d: 0.15, i: 0, i_clamp: 1}
+  jth2: {pid: {p:  5.0,  d: 0.20, i: 0, i_clamp: 1}} # old {p: 1.7,  d: 0.14, i: 0, i_clamp: 1}
+  jth3: {pid: {p:  4.0,  d: 0.20, i: 0, i_clamp: 1}} # old {p: 1.9,  d: 0.12, i: 0, i_clamp: 1}
+  jth4: {pid: {p:  3.0,  d: 0.14, i: 0, i_clamp: 1}} # old {p: 1.3,  d: 0.11, i: 0, i_clamp: 1}
+
+# allegro_hand_controller:
+#   type: effort_controllers/JointTrajectoryController
+#   joints: [jif1, jif2, jif3, jif4, jmf1, jmf2, jmf3, jmf4, jpf1, jpf2, jpf3, jpf4, jth1, jth2, jth3, jth4]
+
+#   constraints:
+#     goal_time: 0                   # Override default
+#     stopped_velocity_tolerance: 10 # Override default
+#   # constraints:
+#   #   goal_time: 0.5                   # Override default
+#   #   stopped_velocity_tolerance: 0.02 # Override default
+
+#   gains: # Required because we're controlling an effort interface
+#     jif1: {p: 1.5,  d: 0.10, i: 0, i_clamp: 1}
+#     jif2: {p: 2.0,  d: 0.11, i: 0, i_clamp: 1}
+#     jif3: {p: 1.8,  d: 0.12, i: 0, i_clamp: 1}
+#     jif4: {p: 1.3,  d: 0.13, i: 0, i_clamp: 1}
+#     jmf1: {p: 1.5,  d: 0.10, i: 0, i_clamp: 1}
+#     jmf2: {p: 2.0,  d: 0.11, i: 0, i_clamp: 1}
+#     jmf3: {p: 1.8,  d: 0.12, i: 0, i_clamp: 1}
+#     jmf4: {p: 1.3,  d: 0.13, i: 0, i_clamp: 1}
+#     jpf1: {p: 1.5,  d: 0.10, i: 0, i_clamp: 1}
+#     jpf2: {p: 2.0,  d: 0.11, i: 0, i_clamp: 1}
+#     jpf3: {p: 1.8,  d: 0.12, i: 0, i_clamp: 1}
+#     jpf4: {p: 1.3,  d: 0.13, i: 0, i_clamp: 1}
+#     jth1: {p: 2.2,  d: 0.15, i: 0, i_clamp: 1}
+#     jth2: {p: 1.7,  d: 0.14, i: 0, i_clamp: 1}
+#     jth3: {p: 1.9,  d: 0.12, i: 0, i_clamp: 1}
+#     jth4: {p: 1.3,  d: 0.11, i: 0, i_clamp: 1}
+
+#   state_publish_rate:  90            # Override default
+#   action_monitor_rate: 90            # Override default
+#   stop_trajectory_duration: 0        # Override default
+#   # state_publish_rate:  25            # Override default
+#   # action_monitor_rate: 30            # Override default
+#   # stop_trajectory_duration: 0        # Override default

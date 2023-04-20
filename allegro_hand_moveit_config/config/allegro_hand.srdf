@@ -1,0 +1,162 @@
+<?xml version="1.0" ?>
+<!--This does not replace URDF, and is not an extension of URDF.
+    This is a format for representing semantic information about the robot structure.
+    A URDF file must exist for this robot as well, where the joints and the links that are referenced are defined
+-->
+<robot name="allegro_hand">
+    <!--GROUPS: Representation of a set of joints and links. This can be useful for specifying DOF to plan for, defining arms, end effectors, etc-->
+    <!--LINKS: When a link is specified, the parent joint of that link (if it exists) is automatically included-->
+    <!--JOINTS: When a joint is specified, the child link of that joint (which will always exist) is automatically included-->
+    <!--CHAINS: When a chain is specified, all the links along the chain (including endpoints) are included in the group. Additionally, all the joints that are parents to included links are also included. This means that joints along the chain and the parent joint of the base link are included in the group-->
+    <!--SUBGROUPS: Groups can also be formed by referencing to already defined group names-->
+    <group name="allegro_hand">
+        <joint name="jif1" />
+        <joint name="jif2" />
+        <joint name="jif3" />
+        <joint name="jif4" />
+        <joint name="jif5" />
+        <joint name="jmf1" />
+        <joint name="jmf2" />
+        <joint name="jmf3" />
+        <joint name="jmf4" />
+        <joint name="jmf5" />
+        <joint name="jpf1" />
+        <joint name="jpf2" />
+        <joint name="jpf3" />
+        <joint name="jpf4" />
+        <joint name="jpf5" />
+        <joint name="jth1" />
+        <joint name="jth2" />
+        <joint name="jth3" />
+        <joint name="jth4" />
+        <joint name="jth5" />
+    </group>
+    <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
+    <end_effector name="thumb" parent_link="th5" group="allegro_hand" />
+    <end_effector name="index" parent_link="if5" group="allegro_hand" />
+    <end_effector name="middle" parent_link="mf5" group="allegro_hand" />
+    <end_effector name="pinky" parent_link="pf5" group="allegro_hand" />
+    <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
+    <disable_collisions link1="base_link" link2="if1" reason="Adjacent" />
+    <disable_collisions link1="base_link" link2="if2" reason="Never" />
+    <disable_collisions link1="base_link" link2="if3" reason="Never" />
+    <disable_collisions link1="base_link" link2="if4" reason="Never" />
+    <disable_collisions link1="base_link" link2="mf1" reason="Adjacent" />
+    <disable_collisions link1="base_link" link2="mf2" reason="Never" />
+    <disable_collisions link1="base_link" link2="mf3" reason="Never" />
+    <disable_collisions link1="base_link" link2="mf4" reason="Never" />
+    <disable_collisions link1="base_link" link2="pf1" reason="Adjacent" />
+    <disable_collisions link1="base_link" link2="pf2" reason="Never" />
+    <disable_collisions link1="base_link" link2="pf3" reason="Never" />
+    <disable_collisions link1="base_link" link2="pf4" reason="Never" />
+    <disable_collisions link1="base_link" link2="th1" reason="Adjacent" />
+    <disable_collisions link1="base_link" link2="th2" reason="Never" />
+    <disable_collisions link1="base_link" link2="th3" reason="Never" />
+    <disable_collisions link1="if1" link2="if2" reason="Adjacent" />
+    <disable_collisions link1="if1" link2="if3" reason="Never" />
+    <disable_collisions link1="if1" link2="if4" reason="Never" />
+    <disable_collisions link1="if1" link2="mf1" reason="Never" />
+    <disable_collisions link1="if1" link2="mf2" reason="Never" />
+    <disable_collisions link1="if1" link2="mf3" reason="Never" />
+    <disable_collisions link1="if1" link2="mf4" reason="Never" />
+    <disable_collisions link1="if1" link2="mf5" reason="Never" />
+    <disable_collisions link1="if1" link2="pf1" reason="Never" />
+    <disable_collisions link1="if1" link2="pf2" reason="Never" />
+    <disable_collisions link1="if1" link2="pf3" reason="Never" />
+    <disable_collisions link1="if1" link2="pf4" reason="Never" />
+    <disable_collisions link1="if1" link2="pf5" reason="Never" />
+    <disable_collisions link1="if1" link2="th1" reason="Never" />
+    <disable_collisions link1="if1" link2="th2" reason="Never" />
+    <disable_collisions link1="if1" link2="th3" reason="Never" />
+    <disable_collisions link1="if2" link2="if3" reason="Adjacent" />
+    <disable_collisions link1="if2" link2="if4" reason="Never" />
+    <disable_collisions link1="if2" link2="if5" reason="Never" />
+    <disable_collisions link1="if2" link2="mf1" reason="Never" />
+    <disable_collisions link1="if2" link2="pf1" reason="Never" />
+    <disable_collisions link1="if2" link2="pf2" reason="Never" />
+    <disable_collisions link1="if2" link2="pf3" reason="Never" />
+    <disable_collisions link1="if2" link2="pf4" reason="Never" />
+    <disable_collisions link1="if2" link2="pf5" reason="Never" />
+    <disable_collisions link1="if2" link2="th1" reason="Never" />
+    <disable_collisions link1="if2" link2="th2" reason="Never" />
+    <disable_collisions link1="if2" link2="th3" reason="Never" />
+    <disable_collisions link1="if3" link2="if4" reason="Adjacent" />
+    <disable_collisions link1="if3" link2="if5" reason="Never" />
+    <disable_collisions link1="if3" link2="mf1" reason="Never" />
+    <disable_collisions link1="if3" link2="pf1" reason="Never" />
+    <disable_collisions link1="if3" link2="pf2" reason="Never" />
+    <disable_collisions link1="if3" link2="th1" reason="Never" />
+    <disable_collisions link1="if3" link2="th2" reason="Never" />
+    <disable_collisions link1="if4" link2="if5" reason="Adjacent" />
+    <disable_collisions link1="if4" link2="mf1" reason="Never" />
+    <disable_collisions link1="if4" link2="pf1" reason="Never" />
+    <disable_collisions link1="if4" link2="pf2" reason="Never" />
+    <disable_collisions link1="if4" link2="th1" reason="Never" />
+    <disable_collisions link1="if4" link2="th2" reason="Never" />
+    <disable_collisions link1="if5" link2="mf1" reason="Never" />
+    <disable_collisions link1="if5" link2="pf1" reason="Never" />
+    <disable_collisions link1="if5" link2="pf2" reason="Never" />
+    <disable_collisions link1="mf1" link2="mf2" reason="Adjacent" />
+    <disable_collisions link1="mf1" link2="mf3" reason="Never" />
+    <disable_collisions link1="mf1" link2="mf4" reason="Never" />
+    <disable_collisions link1="mf1" link2="mf5" reason="Never" />
+    <disable_collisions link1="mf1" link2="pf1" reason="Never" />
+    <disable_collisions link1="mf1" link2="pf2" reason="Never" />
+    <disable_collisions link1="mf1" link2="pf3" reason="Never" />
+    <disable_collisions link1="mf1" link2="pf4" reason="Never" />
+    <disable_collisions link1="mf1" link2="pf5" reason="Never" />
+    <disable_collisions link1="mf1" link2="th1" reason="Never" />
+    <disable_collisions link1="mf1" link2="th2" reason="Never" />
+    <disable_collisions link1="mf1" link2="th3" reason="Never" />
+    <disable_collisions link1="mf1" link2="th4" reason="Never" />
+    <disable_collisions link1="mf2" link2="mf3" reason="Adjacent" />
+    <disable_collisions link1="mf2" link2="mf4" reason="Never" />
+    <disable_collisions link1="mf2" link2="mf5" reason="Never" />
+    <disable_collisions link1="mf2" link2="pf1" reason="Never" />
+    <disable_collisions link1="mf2" link2="th1" reason="Never" />
+    <disable_collisions link1="mf2" link2="th2" reason="Never" />
+    <disable_collisions link1="mf2" link2="th3" reason="Never" />
+    <disable_collisions link1="mf3" link2="mf4" reason="Adjacent" />
+    <disable_collisions link1="mf3" link2="mf5" reason="Never" />
+    <disable_collisions link1="mf3" link2="pf1" reason="Never" />
+    <disable_collisions link1="mf3" link2="th1" reason="Never" />
+    <disable_collisions link1="mf3" link2="th2" reason="Never" />
+    <disable_collisions link1="mf4" link2="mf5" reason="Adjacent" />
+    <disable_collisions link1="mf4" link2="pf1" reason="Never" />
+    <disable_collisions link1="mf4" link2="th1" reason="Never" />
+    <disable_collisions link1="mf4" link2="th2" reason="Never" />
+    <disable_collisions link1="mf5" link2="pf1" reason="Never" />
+    <disable_collisions link1="pf1" link2="pf2" reason="Adjacent" />
+    <disable_collisions link1="pf1" link2="pf3" reason="Never" />
+    <disable_collisions link1="pf1" link2="pf4" reason="Never" />
+    <disable_collisions link1="pf1" link2="pf5" reason="Never" />
+    <disable_collisions link1="pf1" link2="th1" reason="Never" />
+    <disable_collisions link1="pf1" link2="th2" reason="Never" />
+    <disable_collisions link1="pf1" link2="th3" reason="Never" />
+    <disable_collisions link1="pf1" link2="th4" reason="Never" />
+    <disable_collisions link1="pf1" link2="th5" reason="Never" />
+    <disable_collisions link1="pf2" link2="pf3" reason="Adjacent" />
+    <disable_collisions link1="pf2" link2="pf4" reason="Never" />
+    <disable_collisions link1="pf2" link2="pf5" reason="Never" />
+    <disable_collisions link1="pf2" link2="th1" reason="Never" />
+    <disable_collisions link1="pf2" link2="th2" reason="Never" />
+    <disable_collisions link1="pf2" link2="th3" reason="Never" />
+    <disable_collisions link1="pf3" link2="pf4" reason="Adjacent" />
+    <disable_collisions link1="pf3" link2="pf5" reason="Never" />
+    <disable_collisions link1="pf3" link2="th1" reason="Never" />
+    <disable_collisions link1="pf3" link2="th2" reason="Never" />
+    <disable_collisions link1="pf4" link2="pf5" reason="Adjacent" />
+    <disable_collisions link1="pf4" link2="th1" reason="Never" />
+    <disable_collisions link1="pf4" link2="th2" reason="Never" />
+    <disable_collisions link1="pf5" link2="th1" reason="Never" />
+    <disable_collisions link1="pf5" link2="th2" reason="Never" />
+    <disable_collisions link1="th1" link2="th2" reason="Adjacent" />
+    <disable_collisions link1="th1" link2="th3" reason="Never" />
+    <disable_collisions link1="th1" link2="th4" reason="Never" />
+    <disable_collisions link1="th2" link2="th3" reason="Adjacent" />
+    <disable_collisions link1="th2" link2="th4" reason="Never" />
+    <disable_collisions link1="th2" link2="th5" reason="Never" />
+    <disable_collisions link1="th3" link2="th4" reason="Adjacent" />
+    <disable_collisions link1="th3" link2="th5" reason="Never" />
+    <disable_collisions link1="th4" link2="th5" reason="Adjacent" />
+</robot>

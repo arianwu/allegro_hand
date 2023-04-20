@@ -1,0 +1,50 @@
+allegro_hand_controller:
+  type: effort_controllers/JointGroupPositionController
+  joints: [jif1, jif2, jif3, jif4, jmf1, jmf2, jmf3, jmf4, jpf1, jpf2, jpf3, jpf4, jth1, jth2, jth3, jth4]
+
+  jif1: {pid: {p: 0.5,  d: 0, i: 0, i_clamp: 1}}
+  jif2: {pid: {p: 0.5,  d: 0, i: 0, i_clamp: 1}}
+  jif3: {pid: {p: 0.5,  d: 0, i: 0, i_clamp: 1}}
+  jif4: {pid: {p: 0.5,  d: 0, i: 0, i_clamp: 1}}
+  jmf1: {pid: {p: 0.5,  d: 0, i: 0, i_clamp: 1}}
+  jmf2: {pid: {p: 0.5,  d: 0, i: 0, i_clamp: 1}}
+  jmf3: {pid: {p: 0.5,  d: 0, i: 0, i_clamp: 1}}
+  jmf4: {pid: {p: 0.5,  d: 0, i: 0, i_clamp: 1}}
+  jpf1: {pid: {p: 0.5,  d: 0, i: 0, i_clamp: 1}}
+  jpf2: {pid: {p: 0.5,  d: 0, i: 0, i_clamp: 1}}
+  jpf3: {pid: {p: 0.5,  d: 0, i: 0, i_clamp: 1}}
+  jpf4: {pid: {p: 0.5,  d: 0, i: 0, i_clamp: 1}}
+  jth1: {pid: {p: 0.5,  d: 0, i: 0, i_clamp: 1}}
+  jth2: {pid: {p: 0.5,  d: 0, i: 0, i_clamp: 1}}
+  jth3: {pid: {p: 0.5,  d: 0, i: 0, i_clamp: 1}}
+  jth4: {pid: {p: 0.5,  d: 0, i: 0, i_clamp: 1}}
+
+# allegro_hand_controller:
+#  type: effort_controllers/JointTrajectoryController
+#  joints: [jif1, jif2, jif3, jif4, jmf1, jmf2, jmf3, jmf4, jpf1, jpf2, jpf3, jpf4, jth1, jth2, jth3, jth4]
+
+#   constraints:
+#     goal_time: 0                   # Override default
+#     stopped_velocity_tolerance: 0.01 # Override default
+
+#   gains: # Required because we're controlling an effort interface
+#     jif1: {p: 0.5,  d: 0, i: 0, i_clamp: 1}
+#     jif2: {p: 0.5,  d: 0, i: 0, i_clamp: 1}
+#     jif3: {p: 0.5,  d: 0, i: 0, i_clamp: 1}
+#     jif4: {p: 0.5,  d: 0, i: 0, i_clamp: 1}
+#     jmf1: {p: 0.5,  d: 0, i: 0, i_clamp: 1}
+#     jmf2: {p: 0.5,  d: 0, i: 0, i_clamp: 1}
+#     jmf3: {p: 0.5,  d: 0, i: 0, i_clamp: 1}
+#     jmf4: {p: 0.5,  d: 0, i: 0, i_clamp: 1}
+#     jpf1: {p: 0.5,  d: 0, i: 0, i_clamp: 1}
+#     jpf2: {p: 0.5,  d: 0, i: 0, i_clamp: 1}
+#     jpf3: {p: 0.5,  d: 0, i: 0, i_clamp: 1}
+#     jpf4: {p: 0.5,  d: 0, i: 0, i_clamp: 1}
+#     jth1: {p: 0.5,  d: 0, i: 0, i_clamp: 1}
+#     jth2: {p: 0.5,  d: 0, i: 0, i_clamp: 1}
+#     jth3: {p: 0.5,  d: 0, i: 0, i_clamp: 1}
+#     jth4: {p: 0.5,  d: 0, i: 0, i_clamp: 1}
+
+#   state_publish_rate:  90            # Override default
+#   action_monitor_rate: 90            # Override default
+#   stop_trajectory_duration: 0        # Override default

@@ -1,0 +1,5 @@
+<launch>
+	<include file="$(find allegro_hand_ros_control)/launch/allegro_hand.launch"/> 
+	<node name="allegro_hand_action_keyboard"  pkg="allegro_hand_teleop" type="allegro_hand_action_keyboard"/>
+	<node name="keyboard_driver" pkg="keyboard_driver" type="keyboard_driver"/>
+</launch>
