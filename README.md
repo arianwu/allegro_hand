@@ -9,7 +9,7 @@ This repository provides ROS support for the Allegro Hand. The packages were dev
 ## Summary <a name="summary"></a>
 This repository was based on the packages found in [NYU-robot-learning](https://github.com/NYU-robot-learning)'s [Allegro-Hand-Controller-DIME](https://github.com/NYU-robot-learning/Allegro-Hand-Controller-DIME) repo and using the description found in [simlabrobotics](https://github.com/simlabrobotics)'s [allegro_hand_model_v4](https://github.com/simlabrobotics/allegro_hand_model_v4) repo.
 
-Using only [Allegro-Hand-Controller-DIME](https://github.com/NYU-robot-learning/Allegro-Hand-Controller-DIME), the robot was controlled by using a node that subscribed to `/allegroHand/joint_cmd` and would handle the PD+grav_comp controller.
+Using only [Allegro-Hand-Controller-DIME](https://github.com/NYU-robot-learning/Allegro-Hand-Controller-DIME), the robot was controlled by a node that subscribed to `/allegroHand/joint_cmd` and would handle the PD+grav_comp controller.
 <p align="center">
   <img src="docs/images/rosgraph_nyu_controller.png" />
 </p>
@@ -19,7 +19,11 @@ To launch this controller, you need to execute:
 roslaunch allegro_hand allegro_hand.launch
 ```
 
-I have added the ability to use `ros_control` framework by writing a hardware interface for the allegro hand. This allows to use the variety of controllers that the framework offers. To launch this controller, modify the 
+I have added the ability to use `ros_control` framework by writing a hardware interface for the allegro hand. This allows to use the variety of controllers that the framework offers. To launch this controller, modify the config file `allegro_hand_control.yaml` in the package `allegro_hand_ros_control` to use the desired controller (note that the Hardware Interface only counts with an effort interface). Then, execute:
+
+```
+roslaunch allegro_hand_ros_control allegro_hand.launch
+```
 
 ## Installing Drivers [[1]](#1) <a name="drivers"></a>
 Before setting up the controller, we need to ensure that we have all the drivers necessary for establishing communication over the PCAN channel. Make sure to install the following dependencies first before setting up the allegro controller package.
